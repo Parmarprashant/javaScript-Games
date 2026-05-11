@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Guess</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <div class="card">
+      <h1>Number Guess</h1>
+      <p class="subtitle">Guess the secret number from 1 to 100.</p>
+      <div class="input-row">
+        <input type="number" id="guessInput" min="1" max="100" placeholder="Enter number">
+        <button id="guessButton">Guess</button>
+      </div>
+      <p class="message" id="message">You have 10 attempts.</p>
+      <div class="stats">
+        <span>Attempts Left: <strong id="attempts">10</strong></span>
+        <button id="restart">New Game</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
