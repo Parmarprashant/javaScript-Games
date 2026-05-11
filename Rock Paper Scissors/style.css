@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ffe0c7, #d7efff);
+  color: #1d2430;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.card {
+  width: min(100%, 560px);
+  background: rgba(255, 255, 255, 0.94);
+  border-radius: 26px;
+  padding: 32px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(33, 48, 66, 0.16);
+}
+
+h1 {
+  margin: 0 0 10px;
+}
+
+.subtitle {
+  margin: 0 0 26px;
+  color: #5d6978;
+}
+
+.choices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.choice,
+#reset {
+  border: none;
+  border-radius: 16px;
+  padding: 14px 18px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.choice {
+  background: #2f80ed;
+  color: white;
+}
+
+.result-box {
+  margin: 24px 0;
+  padding: 20px;
+  border-radius: 18px;
+  background: #f4f7fb;
+}
+
+.result-box p {
+  margin: 8px 0;
+}
+
+.message {
+  font-weight: 700;
+  min-height: 24px;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+
+#reset {
+  background: #1d2430;
+  color: white;
+}
