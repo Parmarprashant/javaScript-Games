@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon Says</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <div class="card">
+      <h1>Simon Says</h1>
+      <p class="subtitle">Watch the pattern and repeat it in order.</p>
+      <div class="score">Level: <strong id="level">0</strong></div>
+      <div class="board">
+        <button class="pad green" data-color="green"></button>
+        <button class="pad red" data-color="red"></button>
+        <button class="pad yellow" data-color="yellow"></button>
+        <button class="pad blue" data-color="blue"></button>
+      </div>
+      <p class="message" id="message">Press start to play.</p>
+      <button id="start">Start Game</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
