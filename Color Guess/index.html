@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Guess</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <div class="card">
+      <h1>Color Guess</h1>
+      <p class="subtitle">Pick the color that matches the RGB value.</p>
+      <div class="rgb" id="rgbValue">RGB(0, 0, 0)</div>
+      <div class="options" id="options"></div>
+      <div class="footer">
+        <p class="message" id="message">Choose one tile to start.</p>
+        <div class="scoreboard">
+          <span>Score: <strong id="score">0</strong></span>
+          <button id="newGame">New Round</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
