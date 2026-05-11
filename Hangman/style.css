@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #e3ffe0, #fff1d1);
+  color: #1d2b1f;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.card {
+  width: min(100%, 720px);
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 28px;
+  padding: 32px;
+  text-align: center;
+  box-shadow: 0 22px 44px rgba(47, 74, 40, 0.16);
+}
+
+h1 {
+  margin: 0 0 10px;
+}
+
+.subtitle {
+  margin: 0 0 24px;
+  color: #5f6f60;
+}
+
+.word {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.letter-box {
+  width: 44px;
+  height: 54px;
+  border-radius: 12px;
+  background: #eff8ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.message {
+  min-height: 24px;
+  font-weight: 700;
+}
+
+.status {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.letters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(46px, 1fr));
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.letters button,
+#restart {
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.letters button {
+  background: #4caf50;
+  color: white;
+}
+
+.letters button:disabled {
+  background: #adc3af;
+  cursor: default;
+}
+
+#restart {
+  background: #1d2b1f;
+  color: white;
+  padding-inline: 20px;
+}

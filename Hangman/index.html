@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hangman</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <div class="card">
+      <h1>Hangman</h1>
+      <p class="subtitle">Guess the hidden word one letter at a time.</p>
+      <div class="word" id="word"></div>
+      <p class="message" id="message">Choose a letter to begin.</p>
+      <div class="status">
+        <span>Wrong Left: <strong id="wrongLeft">6</strong></span>
+        <span>Used: <strong id="usedLetters">None</strong></span>
+      </div>
+      <div class="letters" id="letters"></div>
+      <button id="restart">New Word</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
